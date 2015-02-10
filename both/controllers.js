@@ -4,11 +4,11 @@ AppController = RouteController.extend({
 
 HomeController = AppController.extend({
   waitOn: function () {
-    return Meteor.subscribe('products');
+    return Meteor.subscribe('circles');
   },
   data: function () {
     return {
-      products: Products.find({}, {sort: {numberOfVotes: -1, name: -1}})
+      circles: Circles.find({}, {sort: {numberOfVotes: -1, name: -1}})
     };
   }
 });
@@ -34,11 +34,11 @@ ProfileController = AppController.extend({
 
 SettingsController = AppController.extend({
   waitOn: function () {
-    return Meteor.subscribe('products');
+    return Meteor.subscribe('circles');
   },
   data: function () {
     return {
-      products: Products.find({}, {sort: {numberOfVotes: -1, name: -1}})
+      circles: Circles.find({}, {sort: {numberOfVotes: -1, name: -1}})
     };
   }
 });

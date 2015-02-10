@@ -1,10 +1,10 @@
-Products = new Mongo.Collection('products');
+Circles = new Mongo.Collection('circles');
 
-Products.before.insert(function (userId, doc) {
+Circles.before.insert(function (userId, doc) {
   doc.createdAt = new Date();
 });
 
-Products.helpers({
+Circles.helpers({
   datePosted: function () {
     return moment(this.createdAt).format('M/D');
   },
@@ -20,39 +20,23 @@ RegExp.escape = function(s) {
   return s.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
 };
 
-Products.search = function(query) {
+Circles.search = function(query) {
   if (!query) {
     return;
   }
-  return Products.find({
+  return Circles.find({
     name: { $regex: RegExp.escape(query), $options: 'i' }
   }, {
     limit: 20
   });
 };
 
-Products.attachSchema(new SimpleSchema({
-  url: {
-    type: String,
-    autoform: {
-      'label-type': 'placeholder',
-      placeholder: 'Product URL'
-    },
-    max: 200
-  },
+Circles.attachSchema(new SimpleSchema({
   name: {
     type: String,
     autoform: {
       'label-type': 'placeholder',
-      placeholder: 'Product Name'
-    },
-    max: 200
-  },
-  tagline: {
-    type: String,
-    autoform: {
-      'label-type': 'placeholder',
-      placeholder: 'Tagline'
+      placeholder: 'Circle Name'
     },
     max: 200
   },

@@ -1,21 +1,21 @@
-Meteor.publish('products', function() {
-  return Products.find();
+Meteor.publish('circles', function() {
+  return Circles.find();
 });
 
-Meteor.publish('productsSearch', function(query) {
+Meteor.publish('circlesSearch', function(query) {
   check(query, String);
 
   if (_.isEmpty(query)) {
     return this.ready();
   }
 
-  return Products.search(query);
+  return Circles.search(query);
 });
 
-Meteor.publishComposite('product', function(_id) {
+Meteor.publishComposite('circle', function(_id) {
   return {
     find: function() {
-      return Products.find({_id: _id});
+      return Circles.find({_id: _id});
     },
     children: [
       {
@@ -52,7 +52,7 @@ Meteor.publishComposite('user', function(_id) {
     children: [
       {
         find: function(user) {
-          return Products.find({_id: {$in: user.profile.votedProductIds}});
+          return Circles.find({_id: {$in: user.profile.votedProductIds}});
         }
       }
     ]

@@ -2,8 +2,8 @@ Router.route('/', {
   name: 'home'
 });
 
-Router.route('/products/:_id', {
-  name: 'products.show'
+Router.route('/circles/:_id', {
+  name: 'circles.show'
 });
 
 Router.route('/users/:_id', {

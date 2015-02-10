@@ -16,8 +16,8 @@
       {{#with user}}
         {{> _profileHeader}}
         {{#ionList}}
-          {{#each votedProducts}}
-            {{> _productItem product=this path="products.show"}}
+          {{#each votedCircles}}
+            {{> _productItem product=this path="Circles.show"}}
           {{/each}}
         {{/ionList}}
       {{else}}
