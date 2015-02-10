@@ -18,6 +18,24 @@
 
   {{#ionView}}
     {{#ionContent}}
+      <ul class="list">
+
+        <li class="item item-toggle">
+           HTML5
+           <label class="toggle toggle-assertive">
+             <input type="checkbox">
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+        </li>
+
+      </ul>
+    {{/ionContent}}
+  {{/ionView}}
+  <!--
+  {{#ionView}}
+    {{#ionContent}}
       {{#ionList}}
         {{#each products}}
           {{> _productItem product=this path="products.show"}}
@@ -25,5 +43,6 @@
       {{/ionList}}
     {{/ionContent}}
   {{/ionView}}
+  //-->
 
 </template>
