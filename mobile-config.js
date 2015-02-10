@@ -1,8 +1,8 @@
 App.info({
-  name: 'Meteor Hunt',
-  description: 'Submit and vote on products made with Meteor',
-  author: 'Nick Wientge',
-  website: 'http://exygen.io',
+  name: 'Spera',
+  description: 'Control your home Internet',
+  author: 'Matt Newman',
+  website: 'http://spera.com',
   version: '0.0.1'
 });
 
