@@ -23,7 +23,7 @@ Meteor.startup(function() {
     }
   ];
 
-  var Circles = [
+  var products = [
     {
       url: 'https://respond.ly/',
       name: 'Respondly',
@@ -93,9 +93,9 @@ Meteor.startup(function() {
   }
 
   var author = Meteor.users.find().fetch()[0];
-  if (Circles.find({}).count() === 0) {
-    _(Circles).each(function (product) {
-      Circles.insert({
+  if (Products.find({}).count() === 0) {
+    _(products).each(function (product) {
+      Products.insert({
         userId: author._id,
         url: product.url,
         name: product.name,

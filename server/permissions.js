@@ -1,4 +1,4 @@
-Circles.allow({
+Products.allow({
   'insert': function(userId, doc) {
     return userId;
   },

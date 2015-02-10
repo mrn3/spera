@@ -1,8 +1,8 @@
 AutoForm.hooks({
-  'Circles-new-form': {
+  'products-new-form': {
     onSuccess: function (operation, result, template) {
       IonModal.close();
-      Router.go('Circles.show', {_id: result});
+      Router.go('products.show', {_id: result});
     }
   }
 });

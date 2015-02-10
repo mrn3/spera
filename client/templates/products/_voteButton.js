@@ -7,7 +7,7 @@ Template._voteButton.events({
       return;
     }
 
-    Meteor.call('Circles.vote', this._id);
+    Meteor.call('Products.vote', this._id);
   }
 });
 
