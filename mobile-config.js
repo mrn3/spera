@@ -1,5 +1,5 @@
 App.info({
-  name: 'Spera',
+  name: 'spera',
   description: 'Control your home Internet',
   author: 'Matt Newman',
   website: 'http://spera.com',

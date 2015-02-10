@@ -44,7 +44,7 @@ Products.attachSchema(new SimpleSchema({
     type: String,
     autoform: {
       'label-type': 'placeholder',
-      placeholder: 'Product Name'
+      placeholder: 'Circle Name'
     },
     max: 200
   },
