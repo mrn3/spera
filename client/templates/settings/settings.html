@@ -1,0 +1,69 @@
+<template name="settings">
+  {{#contentFor "headerButtonLeft"}}
+    <button class="button button-clear pull-left button-positive" data-ion-modal="search">
+      {{> ionIcon icon='ios-search'}}
+    </button>
+  {{/contentFor}}
+
+  {{#contentFor "headerButtonRight"}}
+    <button class="button button-clear pull-right button-positive" data-ion-modal="newProduct">
+      {{> ionIcon icon='ios-plus-empty'}}
+    </button>
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Settings</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      <ul class="list">
+        <li class="item item-toggle">
+           Monitoring
+           <label class="toggle toggle-assertive">
+             <input type="checkbox" checked>
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+        </li>
+        <li class="item item-toggle">
+           Whitelist
+           <label class="toggle toggle-assertive">
+             <input type="checkbox" checked>
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+        </li>
+        <li class="item item-toggle">
+           Blacklist
+           <label class="toggle toggle-assertive">
+             <input type="checkbox" checked>
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+        </li>
+      </ul>
+      <div class="list">
+        <div class="item item-divider">
+          Account
+        </div>
+        <a class="item item-icon-left item-icon-right" href="#" data-action="sign-out">
+          {{> ionIcon icon="ios-locked"}}
+          Sign Out
+          {{> ionIcon icon="ios-arrow-right"}}
+        </a>
+        <div class="item item-divider">
+          About
+        </div>
+        <a class="item item-icon-left item-icon-right" href="https://github.com/mrn3/spera" target="_blank">
+          {{> ionIcon icon="social-github"}}
+          View on Github
+          {{> ionIcon icon="ios-arrow-right"}}
+        </a>
+      </div>
+    {{/ionContent}}
+  {{/ionView}}
+</template>
