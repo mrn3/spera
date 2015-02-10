@@ -2,7 +2,7 @@ AppController = RouteController.extend({
   layoutTemplate: 'appLayout'
 });
 
-TrendingController = AppController.extend({
+HomeController = AppController.extend({
   waitOn: function () {
     return Meteor.subscribe('products');
   },

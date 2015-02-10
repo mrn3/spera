@@ -1,9 +1,5 @@
-Router.route('/', {
-  name: 'trending'
-});
-
-Router.route('/recent', {
-  name: 'recent'
+Router.route('/home', {
+  name: 'home'
 });
 
 Router.route('/products/:_id', {
@@ -18,6 +14,6 @@ Router.route('/notifications', {
   name: 'notifications'
 });
 
-Router.route('/profile', {
-  name: 'profile'
+Router.route('/settings', {
+  name: 'settings'
 });

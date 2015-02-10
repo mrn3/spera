@@ -1,4 +1,4 @@
-<template name="trending">
+<template name="home">
 
   {{#contentFor "headerButtonLeft"}}
     <button class="button button-clear pull-left button-positive" data-ion-modal="search">
@@ -13,7 +13,7 @@
   {{/contentFor}}
 
   {{#contentFor "headerTitle"}}
-    <h1 class="title">Trending</h1>
+    <h1 class="title">Home</h1>
   {{/contentFor}}
 
   {{#ionView}}
@@ -25,9 +25,8 @@
       </div>
 
       <ul class="list">
-
         <li class="item item-toggle">
-           HTML5
+           Disk
            <label class="toggle toggle-assertive">
              <input type="checkbox">
              <div class="track">
@@ -35,8 +34,14 @@
              </div>
            </label>
         </li>
-
       </ul>
+      <div class="list">
+        <a class="item item-icon-left" href="/notifications">
+          <i class="icon ion-person-stalker"></i>
+          Notifications
+          <span class="badge badge-assertive">0</span>
+        </a>
+      </div>
     {{/ionContent}}
   {{/ionView}}
   <!--
