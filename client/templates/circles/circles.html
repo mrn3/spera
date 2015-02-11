@@ -1,0 +1,75 @@
+<template name="circles">
+
+  {{#contentFor "headerButtonLeft"}}
+    <button class="button button-clear pull-left button-positive" data-ion-modal="search">
+      {{> ionIcon icon='ios-search'}}
+    </button>
+  {{/contentFor}}
+
+  {{#contentFor "headerButtonRight"}}
+    <button class="button button-clear pull-right button-positive" data-ion-modal="newProduct">
+      {{> ionIcon icon='ios-plus-empty'}}
+    </button>
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Circles</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      <div align="center">
+        <br />
+        Drag and drop the device on the circle you would like it to belong to
+        <br />
+        <table align="center" width="600">
+            <tr>
+              <td align="center">
+                <h3>Circles</h3>
+              </td>
+              <td align="center">
+                <h3>Devices</h3>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                Adults
+                <br />
+                <svg width="100" height="100">
+                  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="1" fill="red" />
+                </svg>
+                <br />
+                Kids
+                <br />
+                <svg width="100" height="100">
+                  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="1" fill="red" />
+                </svg>
+                <br />
+                Restricted
+                <br />
+                <svg width="100" height="100">
+                  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="1" fill="red" />
+                </svg>
+                <br />
+                Default
+                <br />
+                <svg width="100" height="100">
+                  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="1" fill="red" />
+                </svg>
+              </td>
+              <td align="center" valign="top">
+                <img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-black-icons-media/003356-glossy-black-icon-media-ipod1.png" width="100">
+                <br />
+                <br />
+                <img src="http://compass.xboxlive.com/assets/bb/63/bb63e0ca-0e78-4b00-8d50-6663041e4c80.png?n=x360_Console.png" width="100">
+                <br />
+                <br />
+                <img src="http://www.razorleaf.com/wp-content/uploads/2010/03/LCD-Computer-Screen-Blue.jpg?e79028" width="100">
+              </td>
+            </tr>
+          </table>
+        </div>
+    {{/ionContent}}
+  {{/ionView}}
+
+</template>

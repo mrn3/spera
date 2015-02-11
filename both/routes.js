@@ -2,6 +2,10 @@ Router.route('/', {
   name: 'home'
 });
 
+Router.route('/circles', {
+  name: 'circles'
+});
+
 Router.route('/products/:_id', {
   name: 'products.show'
 });

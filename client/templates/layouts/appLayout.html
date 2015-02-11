@@ -10,12 +10,14 @@
     {{#if isAndroid}}
       {{#ionTabs style="android"}}
         {{> ionTab title="Home" path="home" icon="android-home"}}
+        {{> ionTab title="Circles" path="notifications" icon="android-notifications"}}
         {{> ionTab title="Notifications" path="notifications" icon="android-notifications"}}
-        {{> ionTab title="Settings" path="settings" iconOff="ios-gear-outline" iconOn="ios-gear" class="tab-item-positive"}}
+        {{> ionTab title="Settings" path="settings" icon="ios-gear"}}
       {{/ionTabs}}
     {{else}}
       {{#ionTabs style="ios"}}
         {{> ionTab title="Home" path="home" iconOff="ios-home-outline" iconOn="ios-home" class="tab-item-positive"}}
+        {{> ionTab title="Circles" path="circles" iconOff="ios-circle-outline" iconOn="ios-circle-filled" class="tab-item-positive"}}
         {{> ionTab title="Notifications" path="notifications" iconOff="ios-bell-outline" iconOn="ios-bell" class="tab-item-positive"}}
         {{> ionTab title="Settings" path="settings" iconOff="ios-gear-outline" iconOn="ios-gear" class="tab-item-positive"}}
       {{/ionTabs}}
